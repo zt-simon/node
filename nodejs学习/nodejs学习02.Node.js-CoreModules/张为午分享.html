@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+//    'use strict'
+//    var a = 10;
+//      局部模式;
+//    function a() {
+//        'use strict'
+//        var b = 10;
+//    }
+
+//    var a = 10;
+
+//
+//    var arr = [1,2,3,4];
+//    var result = arr.every(function (t) {
+//        return t>3;
+//    });
+//    console.log(result);
+
+    //随机1~100中 50个不重复的数;
+
+    var arr = [];
+    for(var i = 0; i < 10000; i++){
+        var n = Math.floor(Math.random()*(100-1+1)+1);
+        if(arr.indexOf(n)==-1){
+            arr.push(n);
+        }
+        if(arr.length==50){
+            break;
+        }
+    }
+    console.log(arr);
+    for(var j = 0; j <arr.length-1; j++){
+        for(var k = 0; k < arr.length-j-1;k++){
+            if(arr[k]>=arr[k+1]){
+                var temp = arr[k];
+                arr[k] = arr[k+1];
+                arr[k+1] = temp;
+            }
+        }
+    }
+    console.log(arr);
+</script>
+</body>
+</html>
