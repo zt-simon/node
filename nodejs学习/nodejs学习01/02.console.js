@@ -32,6 +32,6 @@ console.timeEnd('flag')
 console.trace()
     //8.assert 断 言
     //断言:终断代码执行,给出错误提示;
-console.assert(1 === 1,'1不等于2')
+console.assert(1 === 2,'1不等于2')
 console.log('11')
 
