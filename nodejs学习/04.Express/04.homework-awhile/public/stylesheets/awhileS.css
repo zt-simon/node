@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+/*通用样式*/
+.head{
+    width: 100%;
+    /*height: 100%;*/
+}
+.out{
+    width:90%;
+    margin: 0 auto;
+}
+.big{
+    width: 1280px;
+    margin: 0 auto;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.clear{
+    overflow: hidden;
+}
+
+/*导航样式*/
+.nav-position{
+    background-color: #fff;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 3;
+}
+
+.nav-left{
+    background: url("../images/QQ2.png") no-repeat left;
+    padding-left: 200px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+
+}
+
+.nav-left>a:first-child {
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+    display: inline-block;
+    border-bottom:  3px solid black;
+    padding: 20px 25px;
+}
+
+.nav-left>a{
+    text-decoration: none;
+    color:black;
+    padding: 20px 25px;
+    transition: all 1s;
+    margin :-3px;
+}
+
+.nav-left>a:hover{
+    text-decoration: none;
+    color:black;
+    padding: 20px 25px;
+    background-color: #f5f5f5;
+}
+
+
+.nav-right{
+    background: url("../images/QQ20.png") no-repeat left;
+    background-size: 50px 50px;
+    padding-left: 60px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 15px;
+}
+
+.nav-right:hover{
+    background: url("../images/QQ20.png") no-repeat left;
+    background-size: 49px 49px;
+    padding-left: 60px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 15px;
+}
+
+.digest{
+    border: 1px solid #C5E1C9;
+    padding: 15px 20px;
+    width: 100px;
+    border-radius: 30px;
+    text-align: center;
+    color: #C5E1C9;
+    /*margin-top: 10px;*/
+    transition: all 0.5s;
+}
+
+.digest:hover {
+
+    border: 1px solid #C5E1C9;
+    background-color: #5BB76E;
+    padding: 15px 20px;
+    width: 100px;
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+/*大图部分样式*/
+
+.PicOut{
+    width:70%;
+    margin: 0 auto;
+}
+.line{
+    width: 10%;
+    height: 2px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+.pic{
+    width: 450px;
+    position: relative;
+    overflow: hidden;
+}
+.picText{
+    background-color: rgba(0,0,0,0.5);
+    width: 94%;
+    height: 15%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+    padding: 3%;
+}
+.pic:hover .picText {
+    display: block;
+}
+.PicOut div:hover img {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+/*阅读样式*/
+.headS{
+    width: 78%;
+    margin: 60px auto;
+}
+.textAll{
+    margin: 10px auto;
+    width:890px;
+    height: 217px;
+    border: 1px solid #E8E8E8;
+}
+.textAll .left>div:first-child>a {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+.textAll .left>div:first-child>a:hover{
+    color: #57AD68;
+}
+
+.textAll .left>div{
+    margin: 20px;
+}
+.textAll .left>div:nth-child(4)>a{
+    text-decoration: none;
+    color: #57AD68;
+    display: inline-block;
+    background: url("../images/viewall.png") no-repeat right;
+    background-size: 12px 12px;
+    padding-right: 25px;
+    padding-top: 2px;
+
+}
+.textAll .left .line1{
+    width: 30px;
+    height: 1px;
+    background-color: black;
+}
+.outPIC{
+    display: inline-block;
+    margin:15px ;
+    border: 1px solid #E8E8E8;
+
+}
+.outPIC>div:nth-child(2)>a:first-child{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    margin:10px;
+}
+.outPIC>div:nth-child(2)>a:first-child:hover{
+    color:#57AD68;
+}
+.outPIC>div:nth-child(2)>a:nth-child(3){
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    margin:10px;
+    font-size: 14px;
+    /*padding-left: 5px;*/
+
+}
+
+.outPIC>div:nth-child(2)>a:nth-child(3):hover {
+    color:#57AD68;
+}
+
+.outPIC>div:nth-child(2)>span {
+    display: inline-block;
+    color: #000;
+    margin:10px;
+    font-size: 14px;
+}
+.outPIC>div{
+    overflow: hidden;
+}
+
+.outPIC:hover .mask{
+    display: block;
+}
+
+.outPIC>div:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.mask{
+    width: 260px;
+    height: 260px;
+    background-color: rgba(0,0,0,0.3);
+    line-height: 320px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+
+/*人气片客*/
+.userBg{
+    width: 210px;
+    height: 200px;
+    background:url("../images/user-bg.png") no-repeat;
+    background-size: 100% 100%;
+    padding-top: 30px;
+    display: inline-block;
+    margin: 5px;
+}
+.userBg>div:first-child>div:first-child {
+    /*border: 1px solid black;*/
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.userBg>div:nth-child(2)>a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    color: #000;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.userBg>div:nth-child(2)>a:hover {
+    color: #59B66D;
+}
+.userBg>div:nth-child(2)>span:nth-child(3){
+    display: inline-block;
+    width: 15px;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.userBg>div:nth-child(2)>span:nth-child(5){
+
+    font-size: 14px;
+    margin-left: 15px;
+
+}
+/*尾部*/
+
+.footer{
+    background-color: #191818;
+
+}
+.logo{
+    background:url("../images/foot-logo.png") no-repeat left;
+    height: 120px;
+    width: 500px;
+    background-size: 17% 45%;
+    /*line-height: 80px;*/
+    padding-left: 120px;
+}
+.logo>a {
+    display: inline-block;
+    color: #666666;
+    text-decoration: none;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.logo>span {
+    display: inline-block;
+    color: #666666;
+    font-size: 14px;
+    /*margin-bottom: 20px;*/
+}

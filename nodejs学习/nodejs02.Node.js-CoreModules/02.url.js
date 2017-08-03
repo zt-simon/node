@@ -17,6 +17,6 @@ var urlObj = {
     pathname: '/2/text/1.txt',
     search: '?name=张三&age=20'
 }
-// 格式化url对象;
-varurlStr=url.format(urlObj);
-console.log(varurlStr);
+//格式化url对象;
+var urlStr=url.format(urlObj);
+console.log(urlStr);
